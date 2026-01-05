@@ -16,10 +16,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
     <style>
-        /* Kisima Consulting - Custom Tailwind Build */
-        /* This file contains ONLY the Tailwind classes actually used in your site */
-        /* File size: ~15KB vs 3.8MB CDN */
-
+        /* [ALL EXISTING STYLES REMAIN UNCHANGED - PRESERVE THE ENTIRE STYLE BLOCK FROM ORIGINAL] */
         *,
         ::before,
         ::after {
@@ -86,7 +83,6 @@
             height: auto;
         }
 
-        /* Custom CSS Variables */
         :root {
             --primary: #EA580C;
             --primary-dark: #C2410C;
@@ -98,7 +94,6 @@
             --text-dark: #F5F5F4;
         }
 
-        /* Font Families */
         .font-display {
             font-family: "Space Grotesk", sans-serif;
         }
@@ -111,12 +106,10 @@
             font-family: "Space Mono", monospace;
         }
 
-        /* Scroll Smooth */
         .scroll-smooth {
             scroll-behavior: smooth;
         }
 
-        /* Background Colors */
         .bg-background-light {
             background-color: var(--background-light);
         }
@@ -223,7 +216,6 @@
             --tw-gradient-to: #292524;
         }
 
-        /* Text Colors */
         .text-text-light {
             color: var(--text-light);
         }
@@ -300,7 +292,6 @@
             color: #d6d3d1;
         }
 
-        /* Border Colors */
         .border-stone-100 {
             border-color: #f5f5f4;
         }
@@ -349,7 +340,6 @@
             border-style: dashed;
         }
 
-        /* Spacing */
         .m-0 {
             margin: 0;
         }
@@ -438,7 +428,6 @@
             margin-right: 0.5rem;
         }
 
-        /* Padding */
         .p-0 {
             padding: 0;
         }
@@ -559,7 +548,6 @@
             padding-left: 1.5rem;
         }
 
-        /* Width & Height */
         .w-auto {
             width: auto;
         }
@@ -652,7 +640,6 @@
             min-width: 85vw;
         }
 
-        /* Flexbox */
         .flex {
             display: flex;
         }
@@ -741,7 +728,6 @@
             gap: 1px;
         }
 
-        /* Grid */
         .grid {
             display: grid;
         }
@@ -810,7 +796,6 @@
             grid-row-start: 6;
         }
 
-        /* Positioning */
         .fixed {
             position: fixed;
         }
@@ -911,7 +896,6 @@
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
 
-        /* Z-index */
         .z-0 {
             z-index: 0;
         }
@@ -932,7 +916,6 @@
             z-index: -10;
         }
 
-        /* Display */
         .block {
             display: block;
         }
@@ -945,7 +928,6 @@
             display: none;
         }
 
-        /* Overflow */
         .overflow-hidden {
             overflow: hidden;
         }
@@ -954,7 +936,6 @@
             overflow-x: auto;
         }
 
-        /* Border */
         .border {
             border-width: 1px;
         }
@@ -979,7 +960,6 @@
             border-width: 2px;
         }
 
-        /* Border Radius */
         .rounded {
             border-radius: 0.25rem;
         }
@@ -1004,7 +984,6 @@
             border-radius: 9999px;
         }
 
-        /* Shadow */
         .shadow-sm {
             box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
         }
@@ -1025,7 +1004,6 @@
             box-shadow: 0 25px 50px -12px rgb(249 115 22 / 0.25);
         }
 
-        /* Typography */
         .text-xs {
             font-size: 0.75rem;
             line-height: 1rem;
@@ -1120,7 +1098,6 @@
             text-align: center;
         }
 
-        /* Opacity */
         .opacity-10 {
             opacity: 0.1;
         }
@@ -1141,27 +1118,22 @@
             opacity: 0.6;
         }
 
-        /* Pointer Events */
         .pointer-events-none {
             pointer-events: none;
         }
 
-        /* Cursor */
         .cursor-pointer {
             cursor: pointer;
         }
 
-        /* Object Fit */
         .object-cover {
             object-fit: cover;
         }
 
-        /* Backdrop Filter */
         .backdrop-blur-md {
             backdrop-filter: blur(12px);
         }
 
-        /* Animations */
         .animate-pulse {
             animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
@@ -1191,7 +1163,6 @@
             }
         }
 
-        /* Transitions */
         .transition-all {
             transition-property: all;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1218,7 +1189,6 @@
             transition-duration: 500ms;
         }
 
-        /* Selection */
         .selection\:bg-primary *::selection {
             background-color: var(--primary);
         }
@@ -1227,18 +1197,15 @@
             color: #ffffff;
         }
 
-        /* Antialiasing */
         .antialiased {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Grayscale */
         .grayscale {
             filter: grayscale(100%);
         }
 
-        /* Space Between */
         .space-y-1> :not([hidden])~ :not([hidden]) {
             margin-top: 0.25rem;
         }
@@ -1263,7 +1230,6 @@
             margin-top: 2rem;
         }
 
-        /* Scrollbar Hide */
         .hide-scroll::-webkit-scrollbar {
             display: none;
         }
@@ -1273,7 +1239,6 @@
             scrollbar-width: none;
         }
 
-        /* Snap */
         .snap-x {
             scroll-snap-type: x var(--tw-scroll-snap-strictness);
         }
@@ -1290,7 +1255,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Group Hover */
         .group:hover .group-hover\:scale-110 {
             --tw-scale-x: 1.1;
             --tw-scale-y: 1.1;
@@ -1312,7 +1276,6 @@
             filter: grayscale(0%);
         }
 
-        /* Hover States */
         .hover\:text-primary:hover {
             color: var(--primary);
         }
@@ -1375,7 +1338,6 @@
             filter: grayscale(0%);
         }
 
-        /* Focus States */
         .focus\:outline-none:focus {
             outline: 2px solid transparent;
             outline-offset: 2px;
@@ -1397,7 +1359,6 @@
             border-color: var(--primary);
         }
 
-        /* Dark Mode */
         .dark .dark\:bg-background-dark {
             background-color: var(--background-dark);
         }
@@ -1482,7 +1443,6 @@
             opacity: 0.6;
         }
 
-        /* Responsive Design */
         @media (min-width: 640px) {
             .sm\:grid-cols-2 {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1591,7 +1551,6 @@
             }
         }
 
-        /* Forms Plugin */
         input[type='email'],
         input[type='text'],
         textarea {
@@ -1614,7 +1573,6 @@
             box-shadow: 0 0 0 1px var(--primary);
         }
 
-        /* Reduced Motion */
         @media (prefers-reduced-motion: reduce) {
 
             *,
@@ -1652,6 +1610,33 @@
         <div class="w-px h-full bg-stone-300 dark:bg-stone-700 relative overflow-hidden">
             <div
                 class="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-primary to-transparent animate-pulse">
+            </div>
+        </div>
+    </div>
+
+    <!-- FIXED: Floating Stats - Two metrics extreme left and right -->
+    <div class="fixed top-4 right-4 z-50 hidden md:block">
+        <div
+            class="bg-white/90 dark:bg-surface-dark/90 backdrop-blur-md border border-stone-200 dark:border-stone-700 p-4 rounded-xl shadow-xl w-[220px] transition-all duration-300 hover:shadow-orange-500/25 hover:-translate-y-1">
+            <div class="text-xs text-stone-500 dark:text-stone-250 mb-1 uppercase tracking-wider font-mono">
+                AFRICAN GAS RESERVES
+            </div>
+            <div class="text-2xl font-display font-bold text-stone-650 dark:text-white flex items-center gap-2">
+                17.9 TCF
+                <span class="material-icons-outlined text-green-400 text-base">propane_tank</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed top-4 left-4 z-50 hidden md:block">
+        <div
+            class="bg-white/90 dark:bg-surface-dark/90 backdrop-blur-md border border-stone-200 dark:border-stone-700 p-4 rounded-xl shadow-xl w-[220px] transition-all duration-300 hover:shadow-orange-500/25 hover:-translate-y-1">
+            <div class="text-xs text-stone-500 dark:text-stone-250 mb-1 uppercase tracking-wider font-mono">
+                AFRICAN OIL RESERVES
+            </div>
+            <div class="text-2xl font-display font-bold text-stone-650 dark:text-white flex items-center gap-2">
+                125.3B bbl
+                <span class="material-icons-outlined text-green-400 text-base">oil_barrel</span>
             </div>
         </div>
     </div>
@@ -1717,7 +1702,7 @@
                 <div
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-mono tracking-wider uppercase">
                     <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                    System Online
+                    kisima consulting
                 </div>
 
                 <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] text-stone-900 dark:text-white">
@@ -1752,25 +1737,6 @@
             <div class="relative h-[600px] w-full hidden md:flex items-center justify-center">
                 <img src="images/africa-map.png" alt="Africa Energy Systems"
                     class="w-full h-full object-contain opacity-80 dark:opacity-60" />
-
-                <div
-                    class="absolute top-1/4 right-0 bg-white dark:bg-surface-dark border border-stone-200 dark:border-stone-700 p-4 rounded-xl shadow-xl max-w-[200px] z-20">
-                    <div class="text-xs text-stone-500 mb-1 uppercase tracking-wider font-mono">Proven Oil Reserves
-                        (bbl)
-                    </div>
-                    <div class="text-2xl font-display font-bold text-stone-900 dark:text-white flex items-center gap-2">
-                        125.3 B <span class="material-icons-outlined text-green-500 text-base">oil_barrel</span>
-                    </div>
-                </div>
-
-                <div
-                    class="absolute bottom-1/4 left-10 bg-white dark:bg-surface-dark border border-stone-200 dark:border-stone-700 p-4 rounded-xl shadow-xl max-w-[200px] z-20">
-                    <div class="text-xs text-stone-500 mb-1 uppercase tracking-wider font-mono">Natural Gas Reserves
-                    </div>
-                    <div class="text-2xl font-display font-bold text-stone-900 dark:text-white flex items-center gap-2">
-                        17.9 TCF <span class="material-icons-outlined text-green-500 text-base">propane_tank</span>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -1920,14 +1886,15 @@
 
     <!-- Projects Section -->
     <section class="py-24 px-6 relative z-10 overflow-hidden" id="projects">
-        <div class="max-w-7xl mx-auto mb-10 flex justify-between items-end">
-            <div>
+        <div class="max-w-7xl mx-auto mb-10">
+            <div class="text-center mb-8">
                 <span class="text-primary font-mono text-sm tracking-widest uppercase mb-2 block">/// Case
                     Studies</span>
                 <h2 class="font-display text-3xl md:text-4xl font-bold text-stone-900 dark:text-white">Active
                     Deployments</h2>
             </div>
-            <div class="hidden md:flex gap-2">
+
+            <div class="flex justify-center gap-2">
                 <button id="scroll-left"
                     class="p-2 rounded-full border border-stone-300 hover:bg-stone-100 dark:border-stone-600 dark:hover:bg-stone-800 text-stone-600 dark:text-white transition-colors">
                     <span class="material-icons-outlined">arrow_back</span>
@@ -1941,10 +1908,11 @@
 
         <div id="projects-container"
             class="flex overflow-x-auto gap-6 pb-8 hide-scroll px-6 -mx-6 md:mx-0 snap-x snap-mandatory scroll-smooth">
+            <!-- Project cards remain unchanged -->
             <div
-                class="min-w-[85vw] md:min-w-[500px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg p-0 shadow-lg flex flex-col">
+                class="flex-shrink-0 w-[85vw] md:w-[420px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col">
                 <div class="h-48 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
-                    <img alt="Solar Farm"
+                    <img alt="Gulf Energy FDP"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                         src="images/projects/gulf-fdp-4.png" />
                     <div class="absolute top-4 right-4 bg-black/70 text-green-400 text-xs font-mono px-2 py-1 rounded">
@@ -1953,12 +1921,12 @@
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <div>
+                        <div class="flex-1">
                             <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white">South Lokichar
                                 Basin FDP Analysis</h3>
                             <div class="text-stone-500 text-sm">Turkana County, Kenya</div>
                         </div>
-                        <span class="material-icons-outlined text-stone-400">article</span>
+                        <span class="material-icons-outlined text-stone-400 ml-2">article</span>
                     </div>
                     <div
                         class="grid grid-cols-2 gap-px bg-stone-200 dark:bg-stone-700 border border-stone-200 dark:border-stone-700 mb-6">
@@ -1967,7 +1935,7 @@
                             <div class="text-stone-900 dark:text-white font-bold">300+ Pages</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">REPORTS AVAILABLE</div>
+                            <div class="text-xs text-stone-400 font-mono">REPORTS</div>
                             <div class="text-green-600 font-bold">10</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
@@ -1982,9 +1950,6 @@
                     <p class="text-sm text-stone-600 dark:text-stone-400 mb-6 flex-1">
                         AI-powered analysis of Kenya's oil development plan. This interactive system transforms
                         the Gulf Energy Field Development Plan into a queryable knowledge base.
-                        Engineers, policymakers, and stakeholders can explore reservoir characteristics, economic
-                        projections, infrastructure requirements, and development timelines through natural language
-                        queries.
                     </p>
                     <a class="text-primary font-bold text-sm hover:underline self-start"
                         href="https://notebooklm.google.com/notebook/c4025723-a96a-4149-aa7e-8be16544611c?authuser=1"
@@ -1995,7 +1960,7 @@
             </div>
 
             <div
-                class="min-w-[85vw] md:min-w-[500px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg p-0 shadow-lg flex flex-col">
+                class="flex-shrink-0 w-[85vw] md:w-[420px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col">
                 <div class="h-48 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
                     <img alt="Well Logs"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -2006,12 +1971,12 @@
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <div>
+                        <div class="flex-1">
                             <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white">Well Log
                                 Classification Model</h3>
                             <div class="text-stone-500 text-sm">East Africa (Multi-Basin)</div>
                         </div>
-                        <span class="material-icons-outlined text-stone-400">layers</span>
+                        <span class="material-icons-outlined text-stone-400 ml-2">layers</span>
                     </div>
                     <div
                         class="grid grid-cols-2 gap-px bg-stone-200 dark:bg-stone-700 border border-stone-200 dark:border-stone-700 mb-6">
@@ -2028,28 +1993,20 @@
                             <div class="text-stone-900 dark:text-white font-bold">Random Forest</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">TRAINING DATASET</div>
+                            <div class="text-xs text-stone-400 font-mono">DATASET</div>
                             <div class="text-red-500 font-bold">40+ Wells</div>
                         </div>
                     </div>
                     <p class="text-sm text-stone-600 dark:text-stone-400 mb-6 flex-1">
                         Machine learning model for automated lithology classification from conventional well logs.
-                        Trained on gamma ray resistivity, neutron porosity and bulk density plots from 40+ wells.
-                        Reduces formation interpretation time from hours to seconds while maintaining geological
-                        consistency.
+                        Reduces formation interpretation time from hours to seconds.
                     </p>
-                    <span class="text-primary/50 font-bold text-sm">
-                        IN PROGRESS
-                    </span>
-                    <!--<a class="text-primary font-bold text-sm hover:underline self-start"
-                        href="https://github.com/kisima-consult/well-log-classifier">
-                        VIEW CASE STUDY
-                    </a>-->
+                    <span class="text-primary/50 font-bold text-sm">IN PROGRESS</span>
                 </div>
             </div>
 
             <div
-                class="min-w-[85vw] md:min-w-[500px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg p-0 shadow-lg flex flex-col">
+                class="flex-shrink-0 w-[85vw] md:w-[420px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col">
                 <div class="h-48 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
                     <img alt="Agentic AI"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -2060,18 +2017,18 @@
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <div>
+                        <div class="flex-1">
                             <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white">Agentic Well
                                 Reports System</h3>
                             <div class="text-stone-500 text-sm">Chat with your wells</div>
                         </div>
-                        <span class="material-icons-outlined text-stone-400">smart_toy</span>
+                        <span class="material-icons-outlined text-stone-400 ml-2">smart_toy</span>
                     </div>
                     <div
                         class="grid grid-cols-2 gap-px bg-stone-200 dark:bg-stone-700 border border-stone-200 dark:border-stone-700 mb-6">
                         <div class="bg-white dark:bg-stone-800 p-3">
                             <div class="text-xs text-stone-400 font-mono">CAPABILITIES</div>
-                            <div class="text-stone-900 dark:text-white font-bold">Multimodal Docs</div>
+                            <div class="text-stone-900 dark:text-white font-bold text-xs">Multimodal</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
                             <div class="text-xs text-stone-400 font-mono">BUILT ON</div>
@@ -2079,31 +2036,24 @@
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
                             <div class="text-xs text-stone-400 font-mono">DATABASE</div>
-                            <div class="text-stone-900 dark:text-white font-bold">VectorDB & Knowledge Graphs</div>
+                            <div class="text-stone-900 dark:text-white font-bold text-xs">Vector+KG</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
                             <div class="text-xs text-stone-400 font-mono">TOOLS</div>
-                            <div class="text-stone-900 dark:text-white font-bold">DCA, IPR, VLP</div>
+                            <div class="text-stone-900 dark:text-white font-bold text-xs">DCA,IPR,VLP</div>
                         </div>
                     </div>
                     <p class="text-sm text-stone-600 dark:text-stone-400 mb-6 flex-1">
-                        Retrieval-Augmented Generation system that synthesizes information across dozens of well
-                        completion reports, DSTs, and production histories.
-                        Equiped with tools that enable mathematically accurate analysis of well systems.
+                        RAG system that synthesizes information across dozens of well reports and production histories.
+                        Equipped with tools for mathematically accurate analysis.
                     </p>
-                    <span class="text-primary/50 font-bold text-sm">
-                        IN PROGRESS
-                    </span>
-                    <!--<a class="text-primary font-bold text-sm hover:underline self-start"
-                        href="https://github.com/kisima-consult/well-log-classifier">
-                        VIEW CASE STUDY
-                    </a>-->
+                    <span class="text-primary/50 font-bold text-sm">IN PROGRESS</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- Team Section - COMPLETE REPLACEMENT -->
     <section class="py-24 px-6 bg-stone-100 dark:bg-surface-dark/50 relative z-10" id="team">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -2113,72 +2063,68 @@
                     Network</h2>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div
-                    class="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-stone-200 dark:border-stone-700 hover:-translate-y-1 transition-transform">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-16 h-16 rounded-full bg-gradient-to-br from-stone-600 to-stone-800 flex items-center justify-center text-white font-bold text-xl border-2 border-stone-400">
-                            AK</div>
-                        <div>
-                            <h4 class="font-display font-bold text-stone-900 dark:text-white">Arthur Kisaka</h4>
-                            <p class="text-xs text-primary font-mono uppercase">Petroleum Engineer</p>
-                        </div>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="text-sm text-stone-600 dark:text-stone-400 italic">"We are creating the lens through
-                            which you can see beneath your feet."</div>
-                        <div class="pt-3 border-t border-stone-200 dark:border-stone-700">
-                            <div class="text-xs font-bold text-stone-400 mb-2 uppercase">Core Specs</div>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">Agentic
-                                    AI</span>
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">Manufacturing
-                                    Systems</span>
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">Machine
-                                    Learning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex justify-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto p-4 items-stretch">
 
-                <div
-                    class="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-stone-200 dark:border-stone-700 hover:-translate-y-1 transition-transform">
-                    <div class="flex items-center gap-4 mb-4">
+                    <!-- Arthur Kisaka - Image Only Top -->
+                    <div class="group cursor-pointer flex flex-col" onclick="openTeamModal('arthur')">
                         <div
-                            class="w-16 h-16 rounded-full bg-gradient-to-br from-stone-500 to-stone-700 flex items-center justify-center text-white font-bold text-xl border-2 border-stone-300">
-                            IN</div>
-                        <div>
-                            <h4 class="font-display font-bold text-stone-900 dark:text-white">Ian Njuguna</h4>
-                            <p class="text-xs text-primary font-mono uppercase">Petroleum Engineer & Energy Advisor</p>
-                        </div>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="text-sm text-stone-600 dark:text-stone-400 italic">"Bridging policy frameworks with
-                            technical execution."</div>
-                        <div class="pt-3 border-t border-stone-200 dark:border-stone-700">
-                            <div class="text-xs font-bold text-stone-400 mb-2 uppercase">Core Specs</div>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">Energy
-                                    Policy</span>
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">Reservoir
-                                    Engineering</span>
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">COG
-                                    Kenya</span>
-                                <span
-                                    class="px-2 py-1 bg-stone-200 dark:bg-stone-700 text-xs font-mono rounded text-stone-700 dark:text-stone-300">Technical
-                                    Advisory</span>
+                            class="flex-grow relative bg-white dark:bg-stone-800 border-2 border-stone-200 dark:border-stone-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
+
+                            <div class="aspect-square w-full overflow-hidden bg-stone-200 h-64">
+                                <!-- Fixed height for image -->
+                                <img src="images/team/arthur-kisaka.png" alt="Arthur Kisaka"
+                                    class="w-full h-full object-cover transition-all duration-700" />
+                            </div>
+
+
+                            <div class="p-6 text-center flex-grow flex flex-col justify-between">
+                                <div>
+                                    <h3
+                                        class="font-display text-2xl font-bold text-stone-900 dark:text-white mb-1 group-hover:text-primary transition-colors">
+                                        Arthur Kisaka</h3>
+                                    <p class="text-sm text-primary font-mono uppercase tracking-wide font-medium">
+                                        Petroleum Engineer</p>
+                                </div>
+                                <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span class="text-xs text-stone-500 dark:text-stone-400 font-mono">Click for profile
+                                        →</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Ian Njuguna - Image Only Top -->
+                    <div class="group cursor-pointer flex flex-col" onclick="openTeamModal('ian')">
+                        <div
+                            class="flex-grow relative bg-white dark:bg-stone-800 border-2 border-stone-200 dark:border-stone-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
+
+                            <div class="aspect-square w-full overflow-hidden bg-stone-200 h-64">
+                                <!-- Fixed height for image -->
+                                <img src="images/team/ian-njuguna.png" alt="Ian Njuguna"
+                                    class="w-full h-full object-cover transition-all duration-700" />
+                            </div>
+
+
+                            <div class="p-6 text-center flex-grow flex flex-col justify-between">
+                                <div>
+                                    <h3
+                                        class="font-display text-2xl font-bold text-stone-900 dark:text-white mb-1 group-hover:text-primary transition-colors">
+                                        Ian Njuguna</h3>
+                                    <p class="text-sm text-primary font-mono uppercase tracking-wide font-medium">
+                                        Petroleum Engineer & Energy Advisor</p>
+                                </div>
+                                <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span class="text-xs text-stone-500 dark:text-stone-400 font-mono">Click for profile
+                                        →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -2195,15 +2141,14 @@
                 </h2>
                 <p class="text-stone-600 dark:text-stone-400 text-lg leading-relaxed mb-8">
                     Our systems are ready to receive your inquiry. Whether for reservoir optimization, collaboration,
-                    media
-                    requests or technical partnership; please transmit your requirements below.
+                    media requests or technical partnership; please transmit your requirements below.
                 </p>
 
                 <div class="grid sm:grid-cols-2 gap-8 mb-10">
                     <div class="space-y-2">
                         <div class="text-xs font-mono text-stone-500 uppercase">Primary Node</div>
                         <div class="font-display font-bold text-lg text-stone-900 dark:text-white">Nairobi, KE</div>
-                        <div class="text-stone-600 dark:text-stone-400 text-sm">Westlands <br />HQ-1</div>
+                        <div class="text-stone-600 dark:text-stone-400 text-sm">Westlands<br />HQ-1</div>
                     </div>
                 </div>
 
@@ -2214,12 +2159,12 @@
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                     </span>
-                    <span class="font-mono text-xs text-stone-600 dark:text-stone-300">SYSTEM RESPONSE: IMMEDIATE</span>
+                    <span class="font-mono text-xs text-stone-600 dark:text-stone-300">SYSTEM STATUS: LIVE</span>
                 </div>
             </div>
 
             <div class="relative">
-                <div class="absolute -inset-4 bg-stone-100 dark:bg-stone-800/50 rounded-2xl transform rotate-1 -z-10">
+                <div class="absolute -inset-4 bg-stone-100 dark:bg-stone-800/50 rounded-2xl rotate-1 -z-10">
                 </div>
                 <div
                     class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-stone-200 dark:border-stone-700 shadow-xl">
@@ -2275,24 +2220,42 @@
     <footer class="bg-stone-900 text-stone-400 py-16 px-6 relative z-10 border-t border-stone-800">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
             <div class="col-span-1 md:col-span-2">
-                <div class="flex items-center gap-2 mb-6">
-                    <svg class="text-primary" fill="none" height="24" viewBox="0 0 40 40" width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 5V35" stroke="currentColor" stroke-linecap="round" stroke-width="6"></path>
-                        <path d="M30 10L10 25" stroke="currentColor" stroke-linecap="round" stroke-width="6"></path>
-                        <path d="M18 20L30 35" stroke="currentColor" stroke-linecap="round" stroke-width="6"></path>
-                        <path d="M5 35C5 38 8 38 8 35C8 32 5 32 5 35Z" fill="currentColor"></path>
-                    </svg>
-                    <span class="font-display font-bold text-xl text-white uppercase tracking-tight">Kisima</span>
+                <div class="mb-6">
+                    <img src="images/logo-dark-mode.png" alt="Kisima Consulting" class="h-8 w-auto" />
                 </div>
-                <p class="max-w-sm mb-6">
+                <p class="max-w-sm mb-6 text-stone-400">
                     Kisima Consulting accelerates the development of African energy systems through rigorous data
                     science and artificial intelligence.
                 </p>
-                <div class="flex gap-4">
-                    <a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
-                    <a class="hover:text-primary transition-colors" href="#">Twitter</a>
-                    <a class="hover:text-primary transition-colors" href="#">GitHub</a>
+
+                <div class="flex gap-4 items-center">
+                    <!-- FIXED: Social Icons - Added explicit white fill for visibility -->
+                    <a href="https://linkedin.com/company/kisima-consulting" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-stone-800 hover:bg-primary flex items-center justify-center transition-colors"
+                        aria-label="LinkedIn">
+                        <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://kaggle.com/your-username" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-stone-800 hover:bg-primary flex items-center justify-center transition-colors"
+                        aria-label="Kaggle">
+                        <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358" />
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/kisima-consult" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-stone-800 hover:bg-primary flex items-center justify-center transition-colors"
+                        aria-label="GitHub">
+                        <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -2302,7 +2265,7 @@
                     <li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#projects">Case Studies</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Publications</a></li>
+                    <!--<li><a class="hover:text-primary transition-colors" href="#">Publications</a></li>-->
                     <li><a class="hover:text-primary transition-colors" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -2319,10 +2282,161 @@
 
         <div
             class="max-w-7xl mx-auto mt-12 pt-8 border-t border-stone-800 text-xs flex flex-col md:flex-row justify-between items-center">
-            <div>© 2026 Kisima Consulting. All rights reserved.</div>
+            <div>© 2025 Kisima Consulting. All rights reserved.</div>
             <div class="mt-2 md:mt-0 font-mono text-stone-600">SYSTEM STATUS: NOMINAL</div>
         </div>
     </footer>
+
+    <!-- FIXED: Team Modals - Fullscreen Glassmorphism -->
+    <!-- Modal Overlay -->
+    <div id="team-overlay" class="hidden fixed inset-0 bg-black/80 z-80 backdrop-blur-sm" onclick="closeTeamModal()">
+    </div>
+
+    <!-- Arthur Modal - Fullscreen -->
+    <div id="modal-arthur"
+        class="hidden fixed inset-0 z-50 w-full h-full bg-white/80 dark:bg-stone-900/80 backdrop-blur-md overflow-y-auto border-0">
+        <div class="min-h-screen flex items-center justify-center p-8">
+            <div class="max-w-4xl w-full relative">
+                <button onclick="closeTeamModal()"
+                    class="absolute -top-4 -right-4 md:top-0 md:right-0 text-stone-700 dark:text-stone-300 hover:text-primary transition-colors p-4">
+                    <span class="material-icons-outlined text-3xl">close</span>
+                </button>
+
+                <div class="flex flex-col items-center text-center mb-8">
+
+                    <h3 class="font-display text-3xl md:text-4xl font-bold text-stone-900 dark:text-white mb-2">Arthur
+                        Kisaka</h3>
+                    <p class="text-primary font-mono uppercase text-base mb-4 tracking-wider">Petroleum Engineer</p>
+                    <a href="https://www.linkedin.com/in/arthur-k-1284b7121/" target="_blank"
+                        class="inline-flex items-center gap-2 text-stone-600 dark:text-stone-400 hover:text-primary text-sm transition-colors">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        LinkedIn Profile
+                    </a>
+                </div>
+
+                <div
+                    class="space-y-8 bg-white/70 dark:bg-stone-800/70 rounded-2xl p-6 backdrop-blur-sm border border-white/50 dark:border-stone-700/50">
+                    <div>
+                        <h4 class="font-bold text-stone-900 dark:text-white mb-3 text-lg">Career Summary</h4>
+                        <p class="text-stone-700 dark:text-stone-300 text-base leading-relaxed">
+                            Petroleum engineer specializing in AI applications for subsurface energy systems. Combines
+                            deep technical expertise in project management & innovations development with cutting-edge
+                            machine learning to
+                            transform how Africa's energy sector operates.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-stone-900 dark:text-white mb-3 text-lg">Core Competencies</h4>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Agentic
+                                AI
+                                Systems</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Machine
+                                Learning</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Well
+                                Logging</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Industrial
+                                Design</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">RAG
+                                Systems</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Manufacturing
+                                Systems</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-700 text-center">
+                        <p class="text-stone-700 dark:text-stone-300 italic">
+                            "We are creating the lens through which you can see beneath your feet."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ian Modal - Fullscreen -->
+    <div id="modal-ian"
+        class="hidden fixed inset-0 z-50 w-full h-full bg-white/80 dark:bg-stone-900/80 backdrop-blur-md overflow-y-auto border-0">
+        <div class="min-h-screen flex items-center justify-center p-8">
+            <div class="max-w-4xl w-full relative">
+                <button onclick="closeTeamModal()"
+                    class="absolute -top-4 -right-4 md:top-0 md:right-0 text-stone-700 dark:text-stone-300 hover:text-primary transition-colors p-4">
+                    <span class="material-icons-outlined text-3xl">close</span>
+                </button>
+
+                <div class="flex flex-col items-center text-center mb-8">
+
+                    <h3 class="font-display text-3xl md:text-4xl font-bold text-stone-900 dark:text-white mb-2">Ian
+                        Njuguna</h3>
+                    <p class="text-primary font-mono uppercase text-base mb-4 tracking-wider">Petroleum Engineer &
+                        Energy
+                        Advisor</p>
+                    <a href="https://www.linkedin.com/in/ian-n-4270ba143/" target="_blank"
+                        class="inline-flex items-center gap-2 text-stone-600 dark:text-stone-400 hover:text-primary text-sm transition-colors">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        LinkedIn Profile
+                    </a>
+                </div>
+
+                <div
+                    class="space-y-8 bg-white/70 dark:bg-stone-800/70 rounded-2xl p-6 backdrop-blur-sm border border-white/50 dark:border-stone-700/50">
+                    <div>
+                        <h4 class="font-bold text-stone-900 dark:text-white mb-3 text-lg">Career Summary</h4>
+                        <p class="text-stone-700 dark:text-stone-300 text-base leading-relaxed">
+                            Energy advisor and petroleum engineer bridging technical execution with policy frameworks.
+                            Works with Council of Governors Kenya on energy strategy while providing technical
+                            consulting on reservoir development and production optimization. Brings critical policy
+                            perspective to Kisima's technical solutions.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-stone-900 dark:text-white mb-3 text-lg">Core Competencies</h4>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Energy
+                                Policy</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Reservoir
+                                Engineering</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Production
+                                Optimization</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Technical
+                                Advisory</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">COG
+                                Kenya</span>
+                            <span
+                                class="px-3 py-1.5 bg-primary/15 text-stone-800 dark:text-stone-200 text-xs rounded-full font-medium">Regulatory
+                                Frameworks</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-700 text-center">
+                        <p class="text-stone-700 dark:text-stone-300 italic">
+                            "Bridging policy frameworks with technical execution."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         // ========================================
@@ -2330,14 +2444,12 @@
         // ========================================
 
         // Form Endpoint Configuration
-        const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // REPLACE THIS
-
-        // NotebookLM Link
-        const NOTEBOOK_LM_URL = 'https://notebooklm.google.com/notebook/YOUR_NOTEBOOK_ID'; // REPLACE THIS
+        const FORM_ENDPOINT = 'https://formspree.io/f/xojvrgej'; // REPLACE THIS
 
         // ========================================
         // FUNCTIONALITY
         // ========================================
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -2377,6 +2489,21 @@
             });
         });
 
+        // Team Modal Functions
+        function openTeamModal(person) {
+            document.getElementById('team-overlay').classList.remove('hidden');
+            document.getElementById('modal-' + person).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTeamModal() {
+            document.getElementById('team-overlay').classList.add('hidden');
+            document.querySelectorAll('[id^="modal-"]').forEach(modal => {
+                modal.classList.add('hidden');
+            });
+            document.body.style.overflow = 'auto';
+        }
+
         // Contact Form Handling
         const contactForm = document.getElementById('contact-form');
         const formStatus = document.getElementById('form-status');
@@ -2415,17 +2542,6 @@
                 formStatus.className = 'mt-4 text-sm text-center text-red-600';
             }
         });
-
-        // Dark Mode Toggle
-        function toggleDarkMode() {
-            document.documentElement.classList.toggle('dark');
-            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
-        }
-
-        // Check for saved dark mode preference
-        if (localStorage.getItem('darkMode') === 'true') {
-            document.documentElement.classList.add('dark');
-        }
 
         // Intersection Observer for scroll animations
         const observerOptions = {
