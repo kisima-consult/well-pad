@@ -5,9 +5,11 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Kisima Consulting | Intelligent Energy Systems for Africa</title>
+
     <meta name="description"
         content="Intelligence consulting delivering research and advanced analytics for Oil, Gas, Geothermal and Energy systems across Africa." />
 
+    <link rel="icon" href="images/logo-icon-mode.png">
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -1599,6 +1601,16 @@
                 background-position: 0% 200%;
             }
         }
+
+        /* Hide scrollbar but keep functionality */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 
@@ -1885,8 +1897,8 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="py-24 px-6 relative z-10 overflow-hidden" id="projects">
-        <div class="max-w-7xl mx-auto mb-10">
+    <section class="py-20 md:py-24 px-4 md:px-6 relative z-10 overflow-hidden" id="projects">
+        <div class="max-w-7xl mx-auto mb-8 md:mb-10">
             <div class="text-center mb-8">
                 <span class="text-primary font-mono text-sm tracking-widest uppercase mb-2 block">/// Case
                     Studies</span>
@@ -1894,7 +1906,8 @@
                     Deployments</h2>
             </div>
 
-            <div class="flex justify-center gap-2">
+            <!-- Show scroll buttons on desktop only -->
+            <div class="hidden md:flex justify-center gap-2">
                 <button id="scroll-left"
                     class="p-2 rounded-full border border-stone-300 hover:bg-stone-100 dark:border-stone-600 dark:hover:bg-stone-800 text-stone-600 dark:text-white transition-colors">
                     <span class="material-icons-outlined">arrow_back</span>
@@ -1906,12 +1919,13 @@
             </div>
         </div>
 
+        <!-- Responsive grid - max 3 cards on mobile, infinite scroll on desktop -->
         <div id="projects-container"
-            class="flex overflow-x-auto gap-6 pb-8 hide-scroll px-6 -mx-6 md:mx-0 snap-x snap-mandatory scroll-smooth">
-            <!-- Project cards remain unchanged -->
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:flex md:overflow-x-auto md:gap-6 md:pb-8 md:px-6 md:snap-x md:snap-mandatory md:scroll-smooth md:scrollbar-hide">
+            <!-- Project Card 1 -->
             <div
-                class="flex-shrink-0 w-[85vw] md:w-[420px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col">
-                <div class="h-48 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
+                class="md:flex-shrink-0 md:w-[420px] md:h-[600px] md:snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col mb-6 md:mb-0">
+                <div class="h-64 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
                     <img alt="Gulf Energy FDP"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                         src="images/projects/gulf-fdp-4.png" />
@@ -1921,29 +1935,30 @@
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="flex-1">
-                            <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white">South Lokichar
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white mb-1">South
+                                Lokichar
                                 Basin FDP Analysis</h3>
                             <div class="text-stone-500 text-sm">Turkana County, Kenya</div>
                         </div>
-                        <span class="material-icons-outlined text-stone-400 ml-2">article</span>
+                        <span class="material-icons-outlined text-stone-400 ml-3 flex-shrink-0">article</span>
                     </div>
                     <div
                         class="grid grid-cols-2 gap-px bg-stone-200 dark:bg-stone-700 border border-stone-200 dark:border-stone-700 mb-6">
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">DOCUMENT</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">DOCUMENT</div>
                             <div class="text-stone-900 dark:text-white font-bold">300+ Pages</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">REPORTS</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">REPORTS</div>
                             <div class="text-green-600 font-bold">10</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">PLATFORM</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">PLATFORM</div>
                             <div class="text-stone-900 dark:text-white font-bold">NotebookLM</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">ACCESS</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">ACCESS</div>
                             <div class="text-stone-900 dark:text-white font-bold">Public</div>
                         </div>
                     </div>
@@ -1951,17 +1966,24 @@
                         AI-powered analysis of Kenya's oil development plan. This interactive system transforms
                         the Gulf Energy Field Development Plan into a queryable knowledge base.
                     </p>
-                    <a class="text-primary font-bold text-sm hover:underline self-start"
+                    <a class="text-primary font-bold text-sm hover:underline inline-flex items-center gap-1"
                         href="https://notebooklm.google.com/notebook/c4025723-a96a-4149-aa7e-8be16544611c?authuser=1"
                         target="_blank" rel="noopener noreferrer">
                         VIEW PROJECT
+                        <span class="material-icons-outlined text-sm">arrow_forward</span>
                     </a>
                 </div>
+                <!-- To add more cards: COPY this entire div, and modify content -->
+                <!-- 
+            Required classes for new cards:
+            md:flex-shrink-0 md:w-[420px] md:h-[600px] md:snap-center mb-6 md:mb-0
+            -->
             </div>
 
+            <!-- Project Card 2 -->
             <div
-                class="flex-shrink-0 w-[85vw] md:w-[420px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col">
-                <div class="h-48 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
+                class="md:flex-shrink-0 md:w-[420px] md:h-[600px] md:snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col mb-6 md:mb-0">
+                <div class="h-64 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
                     <img alt="Well Logs"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                         src="images/projects/well_log-1.jpg" />
@@ -1971,29 +1993,29 @@
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="flex-1">
-                            <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white">Well Log
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white mb-1">Well Log
                                 Classification Model</h3>
                             <div class="text-stone-500 text-sm">East Africa (Multi-Basin)</div>
                         </div>
-                        <span class="material-icons-outlined text-stone-400 ml-2">layers</span>
+                        <span class="material-icons-outlined text-stone-400 ml-3 flex-shrink-0">layers</span>
                     </div>
                     <div
                         class="grid grid-cols-2 gap-px bg-stone-200 dark:bg-stone-700 border border-stone-200 dark:border-stone-700 mb-6">
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">ACCURACY</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">ACCURACY</div>
                             <div class="text-stone-900 dark:text-white font-bold">--%</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">FEATURES</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">FEATURES</div>
                             <div class="text-green-600 font-bold">4</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">MODEL</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">MODEL</div>
                             <div class="text-stone-900 dark:text-white font-bold">Random Forest</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">DATASET</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">DATASET</div>
                             <div class="text-red-500 font-bold">40+ Wells</div>
                         </div>
                     </div>
@@ -2003,11 +2025,17 @@
                     </p>
                     <span class="text-primary/50 font-bold text-sm">IN PROGRESS</span>
                 </div>
+                <!-- To add more cards: COPY this entire div, and modify content -->
+                <!-- 
+            Required classes for new cards:
+            md:flex-shrink-0 md:w-[420px] md:h-[600px] md:snap-center mb-6 md:mb-0
+            -->
             </div>
 
+            <!-- Project Card 3 -->
             <div
-                class="flex-shrink-0 w-[85vw] md:w-[420px] snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col">
-                <div class="h-48 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
+                class="md:flex-shrink-0 md:w-[420px] md:h-[600px] md:snap-center bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg overflow-hidden shadow-lg flex flex-col mb-0">
+                <div class="h-64 bg-stone-200 dark:bg-stone-900 w-full relative overflow-hidden group">
                     <img alt="Agentic AI"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                         src="images/projects/mvuke-agent.png" />
@@ -2017,30 +2045,30 @@
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="flex-1">
-                            <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white">Agentic Well
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white mb-1">Agentic Well
                                 Reports System</h3>
                             <div class="text-stone-500 text-sm">Chat with your wells</div>
                         </div>
-                        <span class="material-icons-outlined text-stone-400 ml-2">smart_toy</span>
+                        <span class="material-icons-outlined text-stone-400 ml-3 flex-shrink-0">smart_toy</span>
                     </div>
                     <div
                         class="grid grid-cols-2 gap-px bg-stone-200 dark:bg-stone-700 border border-stone-200 dark:border-stone-700 mb-6">
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">CAPABILITIES</div>
-                            <div class="text-stone-900 dark:text-white font-bold text-xs">Multimodal</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">CAPABILITIES</div>
+                            <div class="text-stone-900 dark:text-white font-bold text-sm">Multimodal</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">BUILT ON</div>
-                            <div class="text-green-600 font-bold">Langgraph</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">BUILT ON</div>
+                            <div class="text-green-600 font-bold text-sm">Langgraph</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">DATABASE</div>
-                            <div class="text-stone-900 dark:text-white font-bold text-xs">Vector+KG</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">DATABASE</div>
+                            <div class="text-stone-900 dark:text-white font-bold text-sm">Vector+KG</div>
                         </div>
                         <div class="bg-white dark:bg-stone-800 p-3">
-                            <div class="text-xs text-stone-400 font-mono">TOOLS</div>
-                            <div class="text-stone-900 dark:text-white font-bold text-xs">DCA,IPR,VLP</div>
+                            <div class="text-xs text-stone-400 font-mono mb-1">TOOLS</div>
+                            <div class="text-stone-900 dark:text-white font-bold text-sm">DCA,IPR,VLP</div>
                         </div>
                     </div>
                     <p class="text-sm text-stone-600 dark:text-stone-400 mb-6 flex-1">
@@ -2049,6 +2077,11 @@
                     </p>
                     <span class="text-primary/50 font-bold text-sm">IN PROGRESS</span>
                 </div>
+                <!-- To add more cards: COPY this entire div, and modify content -->
+                <!-- 
+            Required classes for new cards:
+            md:flex-shrink-0 md:w-[420px] md:h-[600px] md:snap-center mb-6 md:mb-0
+            -->
             </div>
         </div>
     </section>
